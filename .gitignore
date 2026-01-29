@@ -1,0 +1,13 @@
+# nix build artifacts
+result
+*.drv
+
+# direnv
+.direnv/
+
+# editor
+.vscode/
+.idea/
+.trae/
+.DS_Store
+
