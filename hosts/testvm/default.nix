@@ -8,6 +8,7 @@
     ../../modules/core/locale.nix
     ../../modules/core/networking.nix
     ../../modules/core/users.nix
+    ../../modules/core/nix.nix
     ../../modules/core/packages.nix
 
     ../../modules/desktop/kde.nix
