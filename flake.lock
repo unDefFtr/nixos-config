@@ -1,5 +1,25 @@
 {
   "nodes": {
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1769187349,
+        "narHash": "sha256-clG+nT6I2qxjIgk5WoSDKJyNhzKJs9jzbCujPF2S/yg=",
+        "ref": "refs/heads/master",
+        "rev": "082a4cd87c6089d1d9c58ebe52655f9e07245fcb",
+        "revCount": 6143,
+        "type": "git",
+        "url": "https://gitee.com/mirrors/home-manager-nix.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://gitee.com/mirrors/home-manager-nix.git"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1769318308,
@@ -19,6 +39,7 @@
     },
     "root": {
       "inputs": {
+        "home-manager": "home-manager",
         "nixpkgs": "nixpkgs"
       }
     }
