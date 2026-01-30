@@ -5,6 +5,7 @@
     neovim
     git
     htop
+    ranger
   ];
 }
 
