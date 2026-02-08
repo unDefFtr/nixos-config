@@ -7,7 +7,8 @@
 
   imports = [
     ./packages.nix
-    ./git.nix
+    ./programs/git.nix
+    ./programs/neovim.nix
   ];
 }
 

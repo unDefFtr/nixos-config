@@ -1,0 +1,3 @@
+[submodule "home/undefftr/dotfiles"]
+	path = home/undefftr/dotfiles
+	url = git@github.com:unDefFtr/dotfiles
