@@ -11,6 +11,8 @@
 
       jetbrains-mono
       maple-mono.CN
+
+      nerd-fonts.jetbrains-mono
     ];
     fontconfig = {
       enable = true;

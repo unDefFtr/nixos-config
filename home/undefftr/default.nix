@@ -10,6 +10,7 @@
     ./programs/git.nix
     ./programs/neovim.nix
     ./programs/rime.nix
+    ./programs/wm-tools.nix
   ];
 }
 

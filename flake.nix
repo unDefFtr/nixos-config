@@ -8,6 +8,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     dw-proton.url = "github:imaviso/dwproton-flake";
+    awww.url = "git+https://codeberg.org/LGFae/awww";
   };
 
   outputs = { self, nixpkgs, home-manager, dw-proton, ... }@inputs: {
