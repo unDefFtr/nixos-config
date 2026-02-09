@@ -8,7 +8,7 @@
     lutris
     protonup-ng
     microsoft-edge
-    flclash
+    fastfetch
   ];
 }
 
