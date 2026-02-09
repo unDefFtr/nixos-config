@@ -12,8 +12,17 @@
     ../../modules/core/packages.nix
 
     ../../modules/hardware/nvidia.nix
-    ../../modules/desktop/gnome.nix
     ../../modules/hardware/audio.nix
+
+    ../../modules/desktop/kde.nix
+
+    ../../modules/desktop/input-method/fcitx5.nix
+    ../../modules/desktop/input-method/fcitx5-rime.nix
+
+    ../../modules/desktop/fonts.nix
+    
+    ../../modules/desktop/steam.nix
+
     ../../modules/services/ssh.nix
   ];
 

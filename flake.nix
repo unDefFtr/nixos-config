@@ -7,17 +7,33 @@
       url = "git+https://gitee.com/mirrors/home-manager-nix.git?ref=release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    dw-proton.url = "github:imaviso/dwproton-flake";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, dw-proton, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
+
+      specialArgs = {
+        inherit inputs;
+      };
+
       modules = [
         ./hosts/undefpc/default.nix
+
+        ({ ... }: {
+          nixpkgs.config.allowUnfree = true;
+        })
+
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
+    
+          home-manager.extraSpecialArgs = {
+            inherit inputs;
+          };
+
           home-manager.users.undefftr =
             import ./home/undefftr/default.nix;
         }

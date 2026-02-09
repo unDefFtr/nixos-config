@@ -9,6 +9,7 @@
     ./packages.nix
     ./programs/git.nix
     ./programs/neovim.nix
+    ./programs/rime.nix
   ];
 }
 
