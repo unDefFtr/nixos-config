@@ -16,8 +16,10 @@
     ../../modules/hardware/nvidia.nix
     ../../modules/hardware/audio.nix
 
-    ../../modules/desktop/kde.nix
-    ../../modules/desktop/niri.nix
+    ../../modules/desktop/display-manager/sddm.nix
+
+    ../../modules/desktop/desktop-environment/plasma.nix
+    ../../modules/desktop/window-manager/niri.nix
 
     ../../modules/desktop/input-method/fcitx5.nix
     ../../modules/desktop/input-method/fcitx5-rime.nix
