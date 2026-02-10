@@ -11,6 +11,7 @@
     ./programs/neovim.nix
     ./programs/rime.nix
     ./programs/wm-tools.nix
+    ./programs/zsh.nix
   ];
 }
 

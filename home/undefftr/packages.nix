@@ -9,6 +9,7 @@
     protonup-ng
     microsoft-edge
     fastfetch
+    github-copilot-cli
   ];
 }
 

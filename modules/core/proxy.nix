@@ -2,15 +2,10 @@
 
 {
   security.polkit.enable = true;
-
-  security.wrappers.flclash = {
-    owner = "root";
-    group = "root";
-    capabilities = "cap_net_bind_service,cap_net_raw,cap_net_admin=+ep";
-    source = "${pkgs.flclash}/bin/FlClash";
+  programs.clash-verge = {
+    enable = true;
+    package = pkgs.clash-verge-rev;
+    tunMode = true;
+    serviceMode = true;
   };
-
-  environment.systemPackages = with pkgs; [
-    flclash
-  ];
 }
