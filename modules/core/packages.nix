@@ -5,6 +5,7 @@
     vim
     wget
     git
+    rustc
+    cargo
   ];
 }
-

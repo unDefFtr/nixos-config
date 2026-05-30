@@ -20,6 +20,7 @@
 
     ../../modules/desktop/desktop-environment/plasma.nix
     ../../modules/desktop/window-manager/niri.nix
+    ../../modules/desktop/dwm.nix
 
     ../../modules/desktop/input-method/fcitx5.nix
     ../../modules/desktop/input-method/fcitx5-rime.nix

@@ -7,5 +7,8 @@
   services.mako.enable = true;
   home.packages = with pkgs; [
     swaylock-effects
+    grim
+    slurp
+    wl-clipboard
   ];
 }

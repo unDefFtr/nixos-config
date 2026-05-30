@@ -2,15 +2,17 @@
   description = "NixOS Configuration";
 
   inputs = {
-    nixpkgs.url = "git+https://mirrors.nju.edu.cn/git/nixpkgs.git?ref=nixos-25.11&shallow=1";
+    nixpkgs.url = "git+https://mirrors.nju.edu.cn/git/nixpkgs.git?ref=nixos-unstable&shallow=1";
 
     home-manager = {
-      url = "git+https://gitee.com/mirrors/home-manager-nix.git?ref=release-25.11";
+      # url = "git+https://gitee.com/mirrors/home-manager-nix.git?ref=release-unstable";
+      url = "git+https://gitee.com/mirrors/home-manager-nix.git";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     dw-proton.url = "github:imaviso/dwproton-flake";
     awww.url = "git+https://codeberg.org/LGFae/awww";
+    dwm.url = "github:unDefFtr/dwm";
   };
 
   outputs = inputs@{ self, nixpkgs, home-manager, ... }:

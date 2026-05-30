@@ -10,6 +10,9 @@
     microsoft-edge
     fastfetch
     github-copilot-cli
+    kdePackages.ark
+    zip
+    unzip
   ];
 }
 
