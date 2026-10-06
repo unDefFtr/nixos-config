@@ -13,6 +13,7 @@
     ./programs/wm-tools.nix
     ./programs/zsh.nix
     ./programs/mpd.nix
+    ./programs/ncm-cli.nix
   ];
 }
 
