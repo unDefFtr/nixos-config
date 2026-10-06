@@ -3,16 +3,21 @@
 
   inputs = {
     nixpkgs.url = "git+https://mirrors.nju.edu.cn/git/nixpkgs.git?ref=nixos-unstable&shallow=1";
-
+    mango = {
+      url = "github:mangowm/mango";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       # url = "git+https://gitee.com/mirrors/home-manager-nix.git?ref=release-unstable";
-      url = "git+https://gitee.com/mirrors/home-manager-nix.git";
+      # url = "git+https://gitee.com/mirrors/home-manager-nix.git";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     dw-proton.url = "github:imaviso/dwproton-flake";
     awww.url = "git+https://codeberg.org/LGFae/awww";
     dwm.url = "github:unDefFtr/dwm";
+    omp.url = "github:can1357/oh-my-pi";
   };
 
   outputs = inputs@{ self, nixpkgs, home-manager, ... }:

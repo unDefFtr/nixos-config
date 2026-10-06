@@ -11,7 +11,7 @@
     ../../modules/core/nix.nix
     ../../modules/core/packages.nix
 
-    ../../modules/desktop/gnome.nix
+    ../../modules/desktop/desktop-environment/gnome.nix
     ../../modules/hardware/audio.nix
     ../../modules/services/ssh.nix
   ];
