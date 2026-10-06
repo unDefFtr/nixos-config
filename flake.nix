@@ -58,6 +58,7 @@
   {
     nixosConfigurations = {
       undefpc = mkHost ./hosts/undefpc/default.nix;
+      undefpc-gen2 = mkHost ./hosts/undefpc-gen2/default.nix;
       testvm = mkHost ./hosts/testvm/default.nix;
     };
   };
