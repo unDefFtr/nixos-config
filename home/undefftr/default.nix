@@ -14,6 +14,7 @@
     ./programs/zsh.nix
     ./programs/mpd.nix
     ./programs/ncm-cli.nix
+    ./programs/mango.nix
   ];
 }
 

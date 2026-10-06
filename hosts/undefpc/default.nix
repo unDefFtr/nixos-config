@@ -20,8 +20,9 @@
 
     ../../modules/desktop/desktop-environment/plasma.nix
     ../../modules/desktop/window-manager/niri.nix
+    ../../modules/desktop/window-manager/mango.nix
     ../../modules/desktop/dwm.nix
-
+    ../../modules/desktop/variables.nix
     ../../modules/desktop/input-method/fcitx5.nix
     ../../modules/desktop/input-method/fcitx5-rime.nix
 
@@ -29,6 +30,7 @@
     
     ../../modules/desktop/steam.nix
     ../../modules/desktop/awww.nix
+    ../../modules/desktop/dms-shell.nix
 
     ../../modules/services/ssh.nix
   ];
